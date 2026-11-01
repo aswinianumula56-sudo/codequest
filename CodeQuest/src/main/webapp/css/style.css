@@ -1,0 +1,264 @@
+
+/* ==============================
+   CODEQUEST - COMMON STYLE
+   Lavender + Purple Theme
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #E6E6FA;
+    color: #32165A;
+    min-height: 100vh;
+}
+
+/* ==============================
+   NAVBAR
+================================ */
+
+nav, .navbar {
+    width: 100%;
+    background: #D8C8F0;
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a, .navbar a {
+    color: #51258F;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 8px 12px;
+}
+
+nav a:hover, .navbar a:hover {
+    color: #7139C6;
+}
+
+/* ==============================
+   HEADINGS
+================================ */
+
+h1, h2, h3 {
+    color: #51258F;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* ==============================
+   COMMON CONTAINERS
+================================ */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* ==============================
+   PURPLE CARDS
+================================ */
+
+.card, .stat-card, .mission-card, .feature-card {
+    background: linear-gradient(135deg, #7139C6, #51258F);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(50, 22, 90, 0.15);
+}
+
+.card h2, .card h3,
+.stat-card h2, .stat-card h3,
+.mission-card h2, .mission-card h3,
+.feature-card h2, .feature-card h3 {
+    color: white;
+}
+
+/* ==============================
+   BUTTONS
+================================ */
+
+button, .btn {
+    background: #7139C6;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background: #51258F;
+}
+
+/* ==============================
+   INPUTS AND FORMS
+================================ */
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px;
+    border: 1px solid #C9B5E8;
+    border-radius: 8px;
+    background: #F8F5FF;
+    color: #32165A;
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    color: #32165A;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* ==============================
+   MISSION RADIO BUTTON FIX
+================================ */
+
+.mission-card label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+
+.mission-card input[type="radio"] {
+    width: auto !important;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+    accent-color: #D8C8F0;
+    cursor: pointer;
+}
+
+/* ==============================
+   ADMIN LOGIN - CENTER CARD
+================================ */
+
+.login-page {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.login-page .login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px;
+    background: linear-gradient(135deg, #7139C6, #51258F);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(50, 22, 90, 0.25);
+    color: white;
+    text-align: center;
+}
+
+.login-page .login-card h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.login-page .login-card label {
+    color: white;
+    text-align: left;
+}
+
+.login-page .login-card input {
+    background: #F8F5FF;
+    color: #32165A;
+}
+
+.login-page .login-card button {
+    width: 100%;
+    background: #D8C8F0;
+    color: #51258F;
+    margin-top: 10px;
+}
+
+.login-page .login-card button:hover {
+    background: #E6E6FA;
+}
+
+.login-page .login-card p {
+    color: white;
+    margin-top: 20px;
+}
+
+.login-page .login-card a {
+    color: #E0C5FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ==============================
+   TABLES
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #7139C6;
+    color: white;
+    padding: 13px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #E0D5F0;
+    color: #32165A;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 600px) {
+
+    nav, .navbar {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .login-page .login-card {
+        padding: 25px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
